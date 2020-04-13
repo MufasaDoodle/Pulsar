@@ -1,14 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="pulsar.views.mainview.MainController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pulsar.views.mainview.MainController">
+   <children>
+      <Label layoutX="269.0" layoutY="14.0" text="Pulsar">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <VBox layoutX="35.0" layoutY="85.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onLaunchSat" text="Launch satellite">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onAskMoney" text="Ask government for money">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" text="Button">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="66.0" mnemonicParsing="false" text="Button">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="92.0" mnemonicParsing="false" text="Button">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="117.0" mnemonicParsing="false" text="Button">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="143.0" mnemonicParsing="false" text="Button">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="20.0" layoutY="311.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Money: " />
+                  <Label fx:id="moneyAmount" layoutX="10.0" layoutY="10.0" text="0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="90.0">
+         <children>
+            <Label fx:id="satAmount" text="0">
+               <VBox.margin>
+                  <Insets bottom="13.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="0">
+               <VBox.margin>
+                  <Insets bottom="13.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="0">
+               <VBox.margin>
+                  <Insets bottom="13.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="69.0" text="0">
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="99.0" text="0">
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="116.0" text="0">
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="134.0" text="0">
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="errorLabel" layoutX="32.0" layoutY="48.0" text=" " />
+   </children>
 </AnchorPane>
